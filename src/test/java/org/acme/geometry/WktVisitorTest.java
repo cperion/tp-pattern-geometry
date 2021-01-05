@@ -9,10 +9,18 @@ public class WktVisitorTest {
     @Test
     public void testWktVisitorPointEmpty() {
         WktVisitor visitor = new WktVisitor();
-        Coordinate coordinate = new Coordinate(3.0, 4.0);
         Point pt = new Point();
-        // BUG pt is null! I con't seem to find why
+
         pt.accept(visitor);
-        assertEquals( "POINT EMPTY", visitor.getResult() );
+        assertEquals("POINT EMPTY", visitor.getResult());
+    }
+    
+    @Test
+    public void testWktVisitorPoint() {
+        WktVisitor visitor = new WktVisitor();
+        Coordinate coordinate = new Coordinate(3.0, 4.0);
+        Point pt = new Point(coordinate);
+        pt.accept(visitor);
+        assertEquals( "POINT(3.0 4.0)", visitor.getResult() );
     }
 }
