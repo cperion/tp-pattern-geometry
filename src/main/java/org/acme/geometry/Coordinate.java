@@ -5,8 +5,8 @@ public class Coordinate {
   private double y;
 
   public Coordinate() {
-    this.x = Double.NaN;
-    this.y = Double.NaN;
+    x = Double.NaN;
+    y = Double.NaN;
   }
 
   public Coordinate(double x, double y) {
@@ -15,11 +15,11 @@ public class Coordinate {
   }
 
   public double getX() {
-    return this.x;
+    return x;
   }
 
   public double getY() {
-    return this.y;
+    return y;
   }
 
   public void setX(double x) {

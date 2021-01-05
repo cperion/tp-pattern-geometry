@@ -1,20 +1,14 @@
 package org.acme.geometry;
-import org.acme.geometry.EnvelopeBuilder;
-
 
 public class Point implements Geometry {
   private Coordinate coordinate;
 
   public Point() {
-    this.coordinate = new Coordinate();
+    coordinate = new Coordinate();
   }
 
   public Point(Coordinate coordinate) {
-    if (!coordinate.isEmpty()) {
-      //do stuff
-    } else {
-      this.coordinate = coordinate;
-    }
+    this.coordinate = coordinate;
     
   }
 
