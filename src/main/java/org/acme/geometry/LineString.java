@@ -1,8 +1,7 @@
 package org.acme.geometry;
 import java.util.ArrayList;
-import org.acme.geometry.*;
 
-public class LineString implements Geometry {
+public class LineString extends AbstractGeometry {
   private ArrayList<Point> points;
 
   public LineString() {

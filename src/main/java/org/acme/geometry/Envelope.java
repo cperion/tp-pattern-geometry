@@ -1,5 +1,4 @@
 package org.acme.geometry;
-import org.acme.geometry.Coordinate;
 
 public class Envelope {
   private Coordinate bottomLeft;

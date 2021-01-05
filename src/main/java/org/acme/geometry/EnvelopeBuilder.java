@@ -1,5 +1,4 @@
 package org.acme.geometry;
-import org.acme.geometry.*;
 
 public class EnvelopeBuilder {
   private double xmin;
